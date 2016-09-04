@@ -2,4 +2,4 @@
 A small Spigot plugin to run Hunger Games on your server.
 
 # Website
-<a href="www.panjaco.com/plugins/HungerGames.html">Hunger Games</a>
+<a href="http://www.panjaco.com/plugins/HungerGames.html">Hunger Games</a>
