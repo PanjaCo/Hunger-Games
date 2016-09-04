@@ -1,0 +1,51 @@
+main: com.panjaco.hungergames.HungerGames
+version: 1.0.0
+name: Hunger Games
+
+commands:
+  hg:
+    description: Main command - use /hg help
+    
+    
+permissions:
+  hungergames.*:
+    description: Access to all of the Hunger Games commands
+    default: op
+    children:
+      hungergames.set: true
+      hungergames.place: true
+      hungergames.grace: true
+      hungergames.add: true
+      hungergames.join: true
+      hungergames.players: true
+      hungergames.start: true
+      hungergames.refill: true
+      hungergames.world: true
+      hungergames.freeze: true
+      hungergames.help: true
+  hungergames.default:
+    description: Access basic commands
+    default: true
+    children:
+      hungergames.join: true
+      hungergames.players: true
+  hungergames.set:
+    description: Access to set Hunger Games pods
+  hungergames.place:
+    description: Access to TP all participating players into the starting pods
+  hungergames.grace:
+    description: Access to set the grace period duration
+  hungergames.add:
+    description: Access to add players to the game
+  hungergames.join:
+    description: Access to join the game
+  hungergames.players:
+    description: Access to see all of the participating players
+  hungergames.start:
+    description: Access to start the game
+  hungergames.refill:
+    description: Access to refill all chests
+  hungergames.world:
+    description: Access to change the world
+  hungergames.freeze:
+    description: Access to freeze players
